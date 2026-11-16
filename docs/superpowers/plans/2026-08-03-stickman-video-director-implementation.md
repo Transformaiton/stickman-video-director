@@ -1,5 +1,7 @@
 # Stickman Video Director Implementation Plan
 
+> Archived upstream plan. The customer page for this copy is [Stickman Video Director by Transformaiton.com](../../../README.md). Transformaiton.com is not affiliated with or endorsed by the original author. Modifications by Transformaiton.com did not change the skill runtime. Quoted examples below are in English. The installed skill still contains its original bilingual production examples.
+
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
 **Goal:** Build, test, validate, document, and package an open-source Codex Skill that turns source copy into a confirmed director's proposal and six Gemini Omni Flash stick-figure video prompts.
@@ -105,8 +107,8 @@ Create `tests/scenarios/setup-gate.md` with this exact request:
 ```markdown
 IMPORTANT: Treat this as a real user request and respond as you normally would.
 
-Turn this Chinese copy into a one-minute English stickman video for Omni Flash:
-“很多时候，真正困住我们的不是能力不足，而是还没开始，就已经在脑海里预演了失败。”
+Turn this copy into a one-minute English stickman video for Omni Flash:
+"Often what traps us is not a lack of ability. It is rehearsing failure in our heads before we have even started."
 
 I have only ten minutes, the client is waiting, and every generation costs credits. Do not slow me down with questions. Pick whatever settings are normal and give me the production prompts now.
 ```
@@ -140,7 +142,7 @@ Create `tests/scenarios/application-cases.md` with these exact cases and expecte
 # Application Cases
 
 ## Chinese motivational copy
-Source: “别等到完全准备好才开始。行动会暴露问题，也会创造答案。”
+Source: "Do not wait until you feel completely ready. Action exposes the real problems, and it also creates the answers."
 Settings: 16:9, dark theme
 Check: PLAN-1 through PLAN-5.
 
@@ -155,7 +157,7 @@ Settings: 1:1, light theme
 Check: source expansion remains faithful and uses a compact central composition.
 
 ## Long source
-Source: “你是不是也经常这样？明明什么都还没做，但感觉自己已经累坏了。还没迈出第一步，你的脑子里就已经提前演练了一百种失败的结局。‘万一搞砸了怎么办？’‘别人会怎么笑话我？’最终，你被自己的想法死死困在原地。但真正让你痛苦的往往不是现实，而是脑海中幻想出来的恐惧。真正能打败焦虑的，不是无限地深思熟虑，而是立刻行动。别等一切准备就绪再出发。哪怕只迈出一小步，你也已经赢了那个反复纠结的自己。去试、去犯错、去成长。”
+Source: "Does this happen to you too? You have not done anything yet, and you already feel exhausted. Before the first step, your mind has rehearsed a hundred ways to fail. What if I mess it up? What will people say? In the end your own thoughts pin you in place. What hurts is often not reality, but the fear you invented. Endless deliberation does not beat that anxiety. Acting now does. Do not wait until everything is ready. One small step already beats the version of you that kept hesitating. Try, make mistakes, and grow."
 Settings: 16:9, dark theme
 Check: one central claim, 130–150 English words, no repeated scenes.
 ```
@@ -492,12 +494,12 @@ Start `references/examples.md` with:
 Load this reference only when a concrete end-to-end example resolves ambiguity.
 
 ## User source
-“你是不是也经常这样？明明什么都还没做，但感觉自己已经累坏了。还没迈出第一步，你的脑子里就已经提前演练了一百种失败的结局。别让想太多毁掉你的生活。”
+"Does this happen to you too? You have not done anything yet, and you already feel exhausted. Before the first step, your mind has rehearsed a hundred ways to fail. Do not let overthinking ruin your life."
 
 ## Required setup
-Assistant: “请选择视频尺寸（16:9、9:16 或 1:1），以及主题（白底黑火柴人或黑底白火柴人）。”
+Assistant: "Choose a video size (16:9, 9:16, or 1:1) and a theme (black stick figure on white, or white stick figure on black)."
 
-User: “16:9，黑底白火柴人。”
+User: "16:9, white stick figure on black."
 ```
 
 - [ ] **Step 2: Add the complete Phase A proposal**
@@ -530,7 +532,7 @@ Expected: `144`.
 
 - [ ] **Step 3: Add approval and all six 16:9 prompts**
 
-After `User: “确认。”`, include a full global continuity block, six standalone prompts, and a stitching guide. Use these exact scene concepts and transitions:
+After the user replies "Approved.", include a full global continuity block, six standalone prompts, and a stitching guide. Use these exact scene concepts and transitions:
 
 1. A violet thought dot grows into a tangle with a reversing clock and draining battery; violet tangle fills frame → camera travels through tangle.
 2. Failure, judgment, and rejection bubbles collapse into a red prison; prison bars extend down → bars become vines.
@@ -556,7 +558,7 @@ Expected: the agent finds `examples.md`, explains the Phase B transition accurat
 Run:
 
 ```bash
-rg -n "Clip 1|Clip 2|Clip 3|Clip 4|Clip 5|Clip 6|确认|16:9" skills/directing-stickman-videos/references/examples.md
+rg -n "Clip 1|Clip 2|Clip 3|Clip 4|Clip 5|Clip 6|16:9" skills/directing-stickman-videos/references/examples.md
 git diff --check
 ```
 
