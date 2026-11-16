@@ -1,5 +1,7 @@
 # Stickman Video Director Skill Design
 
+> Archived upstream design. The customer page for this copy is [Stickman Video Director by Transformaiton.com](../../../README.md). Transformaiton.com is not affiliated with or endorsed by the original author. Modifications by Transformaiton.com did not change the skill described below.
+
 Date: 2026-08-03
 Status: Approved conversational design, pending written-spec review
 

@@ -1,5 +1,7 @@
 # Multilingual README Showcase Implementation Plan
 
+> Archived upstream plan. The customer page for this copy is [Stickman Video Director by Transformaiton.com](../../../README.md). Transformaiton.com is not affiliated with or endorsed by the original author. Modifications by Transformaiton.com did not change the skill runtime. The steps below are the original localization plan, kept as history.
+
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
 **Goal:** Replace the compact English repository README with an attractive creator-first English homepage, four complete localized versions, and two polished preview placeholders that can later be swapped for real light- and dark-theme clips.
@@ -12,7 +14,7 @@
 
 - Default repository homepage is English.
 - Localized files are `README.zh-CN.md`, `README.ja.md`, `README.ko.md`, and `README.pt-BR.md`.
-- Every README starts with language links in this order: English, 简体中文, 日本語, 한국어, Português do Brasil.
+- Every README starts with language links in this order: English, Simplified Chinese, Japanese, Korean, Brazilian Portuguese.
 - Every README includes equivalent hero, demo, advantages, platform, workflow, output, installation, reliability, repository, contribution, star, and license sections.
 - All five versions use natural creator-focused language while preserving identical commands, paths, model names, platform names, ratios, and verified capability claims.
 - The hero targets YouTube Shorts, TikTok, Instagram Reels, and YouTube creators without guaranteeing views, engagement, or virality.
@@ -305,11 +307,11 @@ Expected: each command exits `1` with `missing README` for its requested file.
 
 - [ ] **Step 2: Write the Simplified Chinese README**
 
-Mirror every English section and stable marker. Bold `简体中文` in the language switcher. Use natural creator vocabulary such as `短视频创作者`, `分镜`, `旁白`, `视觉隐喻`, `转场`, and `提示词生产包`. Translate the promise as an energetic benefit rather than word-for-word English. Preserve platform names, code blocks, paths, model names, ratios, and the Skill invocation exactly.
+Mirror every English section and stable marker. Bold `Simplified Chinese` in the language switcher. Use natural creator vocabulary such as short-form creator, storyboard, narration, visual metaphor, transition, and prompt package. Translate the promise as an energetic benefit rather than word-for-word English. Preserve platform names, code blocks, paths, model names, ratios, and the Skill invocation exactly.
 
 - [ ] **Step 3: Write the Japanese README**
 
-Mirror every English section and stable marker. Bold `日本語` in the language switcher. Use natural terms such as `ショート動画クリエイター`, `絵コンテ`, `ナレーション`, `視覚的メタファー`, `トランジション`, and `プロンプトパッケージ`. Keep the tone concise and professional rather than translating English marketing idioms literally. Preserve operational tokens exactly.
+Mirror every English section and stable marker. Bold `Japanese` in the language switcher. Use natural terms such as short-form creator, storyboard, narration, visual metaphor, transition, and prompt package. Keep the tone concise and professional rather than translating English marketing idioms literally. Preserve operational tokens exactly.
 
 - [ ] **Step 4: Run both contract tests to verify GREEN**
 

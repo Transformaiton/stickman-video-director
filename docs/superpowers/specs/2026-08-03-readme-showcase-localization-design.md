@@ -1,5 +1,7 @@
 # Multilingual README Showcase Design
 
+> Archived upstream design. The customer page for this copy is [Stickman Video Director by Transformaiton.com](../../../README.md). Transformaiton.com is not affiliated with or endorsed by the original author. Modifications by Transformaiton.com replaced this multilingual homepage with one English guide.
+
 ## Goal
 
 Transform the repository homepage from a compact technical README into a creator-first product showcase that helps international short-form video creators understand the Skill quickly, see where the visual demos will live, install it confidently, and feel invited to star the project.
@@ -19,7 +21,7 @@ The default `README.md` is English. Four localized siblings provide complete nat
 - `README.ko.md` — Korean
 - `README.pt-BR.md` — Brazilian Portuguese
 
-Every file begins with the same language navigation in this order: English, 简体中文, 日本語, 한국어, Português do Brasil. The active language is visually emphasized. All five files retain equivalent sections, commands, links, claims, and calls to action while using natural localization rather than literal translation.
+Every file begins with the same language navigation in this order: English, Simplified Chinese, Japanese, Korean, Brazilian Portuguese. The active language is visually emphasized. All five files retain equivalent sections, commands, links, claims, and calls to action while using natural localization rather than literal translation.
 
 ## Homepage sequence
 
